@@ -1,5 +1,5 @@
-#include "hamming.h"
-#include "bitio.h"
+#include "../include/hamming.h"
+#include "../include/bitio.h"
 #include <string.h>
 
 static inline int is_pow2(unsigned x){ return x && !(x&(x-1)); }
