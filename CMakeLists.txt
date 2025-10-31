@@ -67,6 +67,9 @@ add_test(NAME codectk_tests COMMAND test_codectk)
 add_executable(pipe_tool tools/pipe.c)
 target_link_libraries(pipe_tool codectk_static m)
 
+add_executable(demo_hamming tools/demo_hamming.c)
+target_link_libraries(demo_hamming codectk_static m)
+
 # pkg-config file
 configure_file(codectk.pc.in codectk.pc @ONLY)
 install(FILES ${CMAKE_BINARY_DIR}/codectk.pc DESTINATION lib/pkgconfig)

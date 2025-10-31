@@ -199,7 +199,7 @@ diff input.txt output.txt
 echo $?  # Should output 0 (files identical)
 ```
 
-**Expected Output:**
+**Expected Output Format:**
 ```
 Encoding with huffman...
 Encoded: 70 bytes -> 187 bytes (267.14% of original)
